@@ -1,0 +1,18 @@
+[project]
+name = "mcp-task-manager"
+version = "0.1.0"
+description = "MCP server for task management — FastMCP + SQLite + Claude Desktop"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp[cli]>=1.0.0",
+    "fastmcp>=0.1.0",
+    "pydantic>=2.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+mcp-task-manager = "server:mcp"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
